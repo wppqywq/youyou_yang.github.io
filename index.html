@@ -2,32 +2,64 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Youyou Yang</title>
+    <title>Youyou Yang | Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
+            color: #333333;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background: url('yellow.png') no-repeat center center;
+            background-size: 100% 200%;
+            position: relative;
             text-align: center;
-            padding: 20px;
+            padding: 80px 20px;
+            color: #ffffff;
         }
 
-        h1 {
-            margin-bottom: 10px;
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            position: relative;
+            z-index: 2;
+            font-size: 1.2em;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #444444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #f9f9f9;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
 
         .section {
@@ -35,8 +67,12 @@
         }
 
         .section h2 {
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 10px;
+            text-align: center;
+            background-color: #eeeeee;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         .section p {
@@ -44,49 +80,52 @@
             line-height: 1.5;
         }
 
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .self-description {
-            background-color: #3d4d5c;
-            color: #fff;
-            padding: 20px;
+        .box {
+            background-color: #eeeeee;
+            padding: 15px;
             border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
     </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <header>
+        <div style="background-color: rgba(0, 0, 0, 0.5); display: inline-block; padding: 20px; border-radius: 5px;">
         <h1>Youyou Yang</h1>
-        
-        <p class="light">Email: <a href="mailto:youyou.yang@mail.mcgill.ca">youyou.yang@mail.mcgill.ca</a></p>
-        <p class="light">Github: <a href="https://github.com/wppqywq">wppqywq</a></p>
-        <a href="resume.pdf" target="_blank">View My Resume</a>
+        <p>Email: <a href="mailto:youyou.yang@mail.mcgill.ca" style="color: #ffffff;">youyou.yang@mail.mcgill.ca</a></p>
+        <div>
     </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="career.html">Resume</a>
+        <a href="hobby.html">Hobby</a>
+    </nav>
 
     <div class="container">
         <div class="section">
-            <h2>Skills</h2>
-            <p>As a physics and computer science student, I have a diverse skill set:</p>
-            <ul>
-                <li>Strong programming skills in Python, C, SQL, and Bash.</li>
-                <li>Experience with data science, machine learning, and algorithm design.</li>
-                <li>Familiarity with hardware design using Arduino and Raspberry Pi.</li>
-                <li>Proficiency in using Linux and Git for version control.</li>
-                <li>Basic knowledge of web development with HTML, CSS, and JavaScript.</li>
-            </ul>
+            <h2>Professional Background</h2>
+            <div class="box">
+                <p>
+                    I am currently pursuing a master's degree in Computer Science at McGill University. My research interests lie in computational neuroscience and the applications of machine learning in physiology and physics. Previously, I was a double major in Physics and Computer Science at McGill University. 
+                    I have worked on experimental high energy physics research. For more details, you can visit my <a href="https://www.physics.mcgill.ca/xhep/en/people/yang.html" target="_blank">research page</a> and my <a href="https://orcid.org/0009-0005-0059-6144" target="_blank">ORCID profile</a>.
+
+                    <br><br>
+                    Additionally, I have gained experience through software development internships. I am curious about the world, love meeting new people, and enjoy learning new things and skills.
+                    You can view my full resume <a href="career.html">here</a>.
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/youyou-yang/" target="_blank">LinkedIn</a><br>
+                    <a href="https://github.com/wppqywq" target="_blank">Github</a>
+                </p>
+                
+            </div>
         </div>
 
-        <div class="self-description">
-            <p>I'm a curious learner with a passion for both science and technology. My journey as a physics and computer science student has equipped me with the ability to quickly grasp new concepts and dive into diverse fields. I thrive on the challenge of exploring the boundaries of knowledge, whether it's in the realms of physics, computer science, or the humanities.</p>
-
-        </div>
+        
     </div>
 </body>
 </html>
