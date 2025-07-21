@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Youyou Yang | Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        header {
+            background: url('green.png') no-repeat center center;
+            background-size: 100% 200%;
+            position: relative;
+            text-align: center;
+            padding: 80px 20px;
+            color: #ffffff;
+        }
+
+        header .header-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2em;
+            padding: 0;
+        }
+
+        .download-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: url('download-icon.png') no-repeat center center;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .download-icon a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        nav {
+            background-color: #444444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            width: 180px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin-bottom: 20px;
+        }
+
+        .sidebar nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .sidebar nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .container {
+            margin-left: 220px;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color: #eeeeee;
+            padding: 10px;
+            border-radius: 5px;
+            color: #444444;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .box {
+            background-color: #eeeeee;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .box ul {
+            padding-left: 20px;
+        }
+
+        .box ul li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .highlight-title {
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .image-row img.short {
+            width: 20%;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-row img.long {
+            width: 40%;
+            height: 250px;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Youyou Yang</h1>
+            <p>Email: <a href="mailto:youyou.yang@mail.mcgill.ca" style="color: #ffffff;">youyou.yang@mail.mcgill.ca</a></p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.pdf" target="_blank">Resume</a>
+        <a href="hobby.html">Hobby</a>
+    </nav>
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#research-experience">Research </a></li>
+                <li><a href="#work-experience">Work </a></li>
+                <li><a href="#technical-projects">Technical Projects</a></li>
+                <li><a href="#additional-experience">Additional </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="section" id="download">
+            <div class="box" style="text-align: center;">
+                <a class="download-button" href="resume.pdf" download>Download PDF Resume</a>
+                <p><a href="https://www.linkedin.com/in/youyou-yang/" target="_blank">LinkedIn</a><br>
+                    <a href="https://github.com/wppqywq" target="_blank">Github</a>
+                </p>
+                
+            </div>
+        </div>
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <div class="box">
+                <ul>
+                    <li>
+                        <span class="highlight-title">McGill University</span>, Montréal, CA<br>
+                        <span class="highlight">Master of Science in Computer Science (Non-Thesis)</span>, Sept. 2024 - Present
+                    </li>
+                    <li>
+                        <span class="highlight-title">McGill University</span>, Montréal, CA<br>
+                        <span class="highlight">Bachelor of Science in Physics and Computer Science</span>, Aug. 2019 - June 2023
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="box">
+                <ul>
+                    <li><span class="highlight-title">Data Science Skills:</span> Experienced in <span class="highlight">Python</span> for data analysis and machine learning, adept in using libraries such as <span class="highlight">NumPy, SciPy, Pandas, Seaborn, TensorFlow, and Scikit-learn</span>.</li>
+                    <li><span class="highlight-title">Programming Skills:</span> Proficient in <span class="highlight">Python, C, Bash, mySQL</span>. Experienced with <span class="highlight">Ocaml</span> and <span class="highlight">Matlab</span> for software development, scripting, database management, and scientific computing.</li>
+                    <li><span class="highlight-title">Hardware Design:</span> Familiar with <span class="highlight">Arduino</span> and <span class="highlight">Raspberry Pi</span> platforms.</li>
+                    <li><span class="highlight-title">Tools and OS:</span> Experienced with <span class="highlight">JIRA</span> and <span class="highlight">Git</span> for version control, and <span class="highlight">LaTeX</span> for document preparation.</li>
+                    <li><span class="highlight-title">Language Skills:</span> Fluent in <span class="highlight">English</span> and <span class="highlight">Mandarin</span>. Basic proficiency in <span class="highlight">French</span> and <span class="highlight">Japanese</span>.</li>                 
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="research-experience">
+            <h2>Research Experience</h2>
+            <div class="box">
+                <ul>
+                    <li>
+                        <span class="highlight-title">m2b3 Lab, McGill University</span>, Montréal, CA<br>
+                        <span class="highlight">Research Assistant</span>, September 2024 - Present<br>
+                        <!-- TODO: Add detailed description of computational perception research project -->
+                        Conducting research in computational perception and cognitive modeling. <span style="color: #888; font-style: italic;">[TODO: Add detailed project description]</span>
+                    </li>
+                    <li>
+                        <span class="highlight-title">LLM Job Analysis Project</span>, Remote<br>
+                        <span class="highlight">Research Collaborator</span>, Summer 2024 - Present<br>
+                        <!-- TODO: Add detailed description of LLM job analysis project -->
+                        Working on job analysis project using LLMs in the creative industry. <span style="color: #888; font-style: italic;">[TODO: Add detailed project description and methodologies]</span>
+                    </li>
+                    <li>
+                        <span class="highlight-title">McGill ATLAS Group</span>, Montréal, CA<br>
+                        <span class="highlight">Research Assistant</span>, May 2023 - August 2023<br>
+                        Applied <span class="highlight">Python</span> to develop and identify the optimal digital filtering solution for energy reconstruction in the ATLAS calorimeter at <span class="highlight">CERN</span>, integrating time series analysis techniques for enhanced signal processing. <a href="https://github.com/wppqywq/summer_LAr_research" target="_blank"><img src="github-icon.png" alt="GitHub" style="width:20px;margin-right:5px;"> Details</a>
+                    </li>
+                    <li>
+                        <span class="highlight-title">McGill ATLAS Group</span>, Montréal, CA<br>
+                        <span class="highlight">Undergraduate Researcher</span>, May 2022 - Dec 2022<br>
+                        Employed <span class="highlight">PyROOT</span> for data analysis within the frame of Standard Model Effective Field Theory (<span class="highlight">SMEFT</span>), to search for unique particle interactions. Utilized <span class="highlight">MLE</span> methods in <span class="highlight">Python</span> to set constraints on Effective Field Theory Lagrangian, accounting for systematic uncertainties. <a href="https://github.com/wppqywq/summer_EFT" target="_blank"><img src="github-icon.png" alt="GitHub" style="width:20px;margin-right:5px;"> Details</a>
+                    </li>
+                    <small>I am truly grateful to my mentor, Brigitte Vachon, for her guidance and support.</small>
+                </ul>
+                <div class="image-row">
+                    <img src=".\resume_pic\lar.jpg" alt="LAr Calorimeter" title="More info: https://atlas.cern/Discover/Detector/Calorimeter" class="long">
+                    <img src=".\resume_pic\feynman.jpg" alt="Feynman Diagram of the WWγγ Vertex" class="long">
+                </div>
+                <div class="image-caption">Left: LAr Calorimeter (More info: <a href="https://atlas.cern/Discover/Detector/Calorimeter" target="_blank">here</a>) | Right: Feynman Diagram of the WWγγ Vertex</div>
+                
+            </div>
+        </div>
+
+        <div class="section" id="work-experience">
+            <h2>Work Experience</h2>
+            <div class="box">
+                <ul>
+                    <li>
+                        <span class="highlight-title">BorgWarner Technical center</span>, Shanghai, CN<br>
+                        <span class="highlight">Software Development Intern</span>, July 2021 - August 2021<br>
+                        <span class="highlight"> - Developed Communication Protocol:</span> Engineered AutoSAR-based communication protocols for Geely Lotus cars, optimizing efficiency with <span class="highlight">Python-to-C</span> scripts.<br>
+                        <span class="highlight"> - Led Upper Computer Modularization:</span> Led software modularization for an automated car project. Achieving timely and accurate transportation using the <span class="highlight">Python ROS</span> package, and Bash script on <span class="highlight">Raspberry Pi</span>, ensuring project success.
+                    </li>
+                    <li>
+                        <span class="highlight-title">Dreame Tech</span>, Suzhou, CN<br>
+                        <span class="highlight">Software Testing Intern</span>, May 2021 - June 2021<br>
+                        <span class="highlight">Employed systematic testing methodologies:</span> on Dreame Z10 Robot Vacuum cleaner using <span class="highlight">Bash</span> scripts. Effectively managing issues and tracking progress through <span class="highlight">Jira</span> for streamlined development and quality assurance.
+                    </li>
+                </ul>
+                <div class="image-row">
+                    <img src=".\resume_pic\borg.jpg" alt="Automatic car project at BorgWarner" class="short">
+                    <img src=".\resume_pic\dreame.jpg" alt="Dreame Z10 Robot Vacuum cleaner" class="short">
+                </div>
+                <div class="image-caption">Left: Automatic car project at BorgWarner | Right: Dreame Z10 Robot Vacuum cleaner</div>
+            </div>
+        </div>
+    
+        
+    
+        <div class="section" id="technical-projects">
+            <h2>Technical Projects</h2>
+            <div class="box">
+                <ul>
+                    <li>
+                    <span class="highlight-title">May 2023 - July 2023:</span> Developing a <span class="highlight">Chinese Restaurant Process (CRP)</span> with <span class="highlight">Gibbs Sampling</span>. Implemented Gibbs sampling in a CRP model in Python to solve <span class="highlight">infinite Gaussian mixture modeling challenges</span>.<a href="https://github.com/wppqywq/nCRP_with_inf_gaussian" target="_blank"><img src="github-icon.png" alt="GitHub" style="width:20px;margin-left:5px;"> Details</a></li>
+                    <li><span class="highlight-title">
+                    May 2022:</span> Measuring of <span class="highlight">Lambda Cold Dark Matter</span> parameters with <span class="highlight">MCMC</span>. Employed the Markov chain Monte Carlo method in Python to fit the CMB data to the \(\Lambda CDM\) model, focusing on the density parameters and Hubble's constant.<a href="https://github.com/wppqywq/PHYS321_final_CMB_Map" target="_blank"><img src="github-icon.png" alt="GitHub" style="width:20px;margin-left:5px;"> Details</a></li>
+                    <li><span class="highlight-title">
+                    May 2022:</span> <span class="highlight">Monte Carlo Tree Search</span> for the Colosseum Survival game. Built an intelligent agent using Monte Carlo Tree Search (MCTS) for the Colosseum Survival game strategy.<a href="https://github.com/wppqywq/Monte_carlo_tree_search" target="_blank"><img src="github-icon.png" alt="GitHub" style="width:20px;margin-left:5px;"> Details</a></li>
+                    <li><span class="highlight-title">
+                    March 2023:</span> <span class="highlight">Electrocardiogram (ECG) Circuit Design and Signal Processing</span>. Constructed an ECG circuit including a differential amplifier, notch filter, and low-pass filter. Processed digital signals using Python, resulting in clear and complete ECG readings.
+        </ul>
+                </ul>
+                <div class="image-row">
+                    <img src=".\resume_pic\circuit.png" alt="ECG circuit" class="long">
+                </div>
+                <div class="image-caption">Electrocardiogram (ECG) Circuit, with our clear and complete ECG readings on the oscilloscope.</div>
+            </div>
+        </div>
+    
+        <div class="section" id="additional-experience">
+            <h2>Additional Experience</h2>
+            <div class="box">
+                <ul>
+                    <li>
+                        <span class="highlight-title">Published Documentation</span>
+                        <ul>
+                            <li><span class="highlight">Mar 2024</span>: Fiducial and differential cross-section measurements of electroweak \(W\gamma jj\) production in \(pp\) collisions at \(\sqrt{s} = 13\) TeV with the ATLAS detector, <a href="https://arxiv.org/abs/2403.02809" target="_blank">[online] arXiv</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="highlight-title">Talks</span>
+                        <ul>
+                            <li><span class="highlight">Aug 2022</span>: Summer Undergraduate Research Showcase, McGill University. Contributed talk: Sensitivity studies in the search for new physics in p-p collisions at the LHC.</li>
+                            <li><span class="highlight">Aug 2022</span>: ATLAS Canada Summer Student Presentations, CERN. Contributed talk: Sensitivity studies in the search for new physics in p-p collisions at the LHC (same).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="highlight-title">Hackathon</span>
+                        <ul>
+                            <li><span class="highlight">Jan 2022</span>: Hack Mcwics 22, McGill Women in Computer Science. Won the Most Practical Award for developing a website of Serving Size Converter using HTML+JavaScript.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section" id="download">
+            <div class="box" style="text-align: center;">
+                <a class="download-button" href="resume.pdf" download>Download PDF Resume</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
